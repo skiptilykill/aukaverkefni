@@ -1,5 +1,6 @@
 import pymysql
 from bottle import *
+import os
 
 with open('pw.txt', 'r') as f:
     pwdata = f.read()
