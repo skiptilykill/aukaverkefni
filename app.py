@@ -134,4 +134,4 @@ def submit_update():
     c.close()
 
     return redirect('/')
-run(port=5000)
+run(app=my_session, host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
